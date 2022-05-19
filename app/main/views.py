@@ -7,7 +7,7 @@ from werkzeug.security import generate_password_hash, check_password_hash
 
 @app.route('/')
 def index():
-    
+
     return render_template('index.html')
 
 
@@ -37,8 +37,8 @@ def signup():
         db.session.add(new_user)
         db.session.commit()
 
-        return '<h1>New user has been created!</h1>'
-        
+        return redirect(url_for('dashboard'))
+
 
     return render_template('signup.html', form=form)
 
@@ -49,8 +49,6 @@ def dashboard():
 
 
 @app.route('/logout')
-@login_required
 def logout():
     logout_user()
     return redirect(url_for('login'))
-
