@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 from app import app,db
 from flask import render_template,redirect,url_for
 from flask_login import login_required,login_user,current_user,logout_user
@@ -52,3 +53,26 @@ def signup():
 def logout():
     logout_user()
     return redirect(url_for('login'))
+=======
+from app import app
+from flask import render_template
+
+
+@app.route('/')
+@app.route('/fruits')
+
+def fruits():
+    
+    return render_template('fruits.html')
+
+
+@app.route('/veges')
+
+def veges():
+    
+    return render_template('veges.html')
+    
+    
+    
+    
+>>>>>>> vegesfruits
