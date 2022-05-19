@@ -1,4 +1,4 @@
-#!/home/b3nzuk3/flask-group/venv/bin/python3
+#!/home/b3nzuk3/flask-group/venv/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys
