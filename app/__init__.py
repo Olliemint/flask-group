@@ -1,13 +1,4 @@
 from flask import Flask
-<<<<<<< HEAD
-
-
-app = Flask(__name__)
-
-
-
-from app.main import views
-=======
 from flask_sqlalchemy import SQLAlchemy
 from flask_bcrypt import Bcrypt
 from flask_bootstrap import Bootstrap
@@ -29,4 +20,3 @@ login_manager.init_app(app)
 login_manager.login_view = 'login'
 
 from app.main import views
->>>>>>> oscarbranch
