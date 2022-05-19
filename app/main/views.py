@@ -6,9 +6,14 @@ from app.models import User
 from werkzeug.security import generate_password_hash, check_password_hash
 
 @app.route('/')
+@app.route('/')
 def index():
 
+    '''
+    View root page function that returns the index page and its data
+    '''
     return render_template('index.html')
+
 
 
 @app.route('/login', methods=['GET', 'POST'])
@@ -20,9 +25,7 @@ def login():
         if user:
             if check_password_hash(user.password, form.password.data):
                 login_user(user, remember=form.remember.data)
-                return redirect(url_for('dashboard'))
-
-        return '<h1>Invalid username or password</h1>'
+                return redirect(url_for('index'))
 
 
     return render_template('login.html', form=form)
@@ -37,15 +40,12 @@ def signup():
         db.session.add(new_user)
         db.session.commit()
 
-        return redirect(url_for('dashboard'))
+        return redirect(url_for('index'))
 
 
     return render_template('signup.html', form=form)
 
-@app.route('/dashboard')
-@login_required
-def dashboard():
-    return render_template('dashboard.html', name=current_user.username)
+
 
 
 @app.route('/logout')
