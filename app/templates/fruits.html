@@ -1,0 +1,285 @@
+{% extends 'base.html' %}
+{% block content %}
+<!-- <div class="container">
+
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{{url_for('static', filename='slider1.png')}}" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="{{url_for('static', filename='slider2.png')}}" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="{{url_for('static', filename='slider3.png')}}" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div> -->
+
+
+
+<div class="container-fluid" id="bg">
+ 
+  <div class="container" id="banner">
+    <p>Shop Organic Fruits , Cherries, Oranges, melons, Apples And Exotic Seasonal Fruits</p>
+  </div>
+<div class="container">
+  
+  
+
+    <main>
+     
+ 
+
+  
+    <div class="container">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 g-3">
+        <div class="col">
+          <div class="card shadow-sm" id="card-item">
+             <div class="image">
+               <img src="{{url_for('static', filename='mixedberries.png')}}" alt="">
+             </div>
+            <div class="card-body">
+              <div class="name">
+                <h3>Mixed berries</h3>
+                <p>Ksh 150</p>
+              </div>
+              
+              
+
+              <div class="d-flex">
+                <div class="btn-group">
+                  <button type="submit" class="item-btn">Add to Cart</button>
+                </div>
+              
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col">
+          <div class="card shadow-sm"  id="card-item">
+            <div class="image">
+              <img src="{{url_for('static', filename='Elderberry.png')}}" alt="">
+            </div>
+            
+            <div class="card-body">
+              <div class="name">
+                <h3>Elderberry</h3>
+                <p>Ksh 150</p>
+
+              </div>
+              <div class="d-flex">
+                <div class="btn-group">
+                  <button type="submit" class="item-btn">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm" id="card-item">
+            <div class="image">
+              <img src="{{url_for('static', filename='Cherry.png')}}" alt="">
+            </div>
+           <div class="card-body">
+             <div class="name">
+               <h3>Cherry</h3>
+               <p>Ksh 50</p>
+             </div>
+             
+             
+
+             <div class="d-flex">
+               <div class="btn-group">
+                 <button type="submit" class="item-btn">Add to Cart</button>
+               </div>
+             
+             </div>
+           </div>
+         </div>
+        </div>
+        <div class="col" id="square has-transition">
+          <div class="card shadow-sm" id="card-item">
+            <div class="image">
+              <img src="{{url_for('static', filename='melon.png')}}" alt="">
+            </div>
+           <div class="card-body">
+             <div class="name">
+               <h3>Watermelon</h3>
+               <p>Ksh 200</p>
+             </div>
+             
+             
+
+             <div class="d-flex">
+               <div class="btn-group">
+                 <button type="submit" class="item-btn">Add to Cart</button>
+               </div>
+             
+             </div>
+           </div>
+         </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm" id="card-item">
+            <div class="image">
+              <img src="{{url_for('static', filename='Raspberries.png')}}" alt="">
+            </div>
+           <div class="card-body">
+             <div class="name">
+               <h3>Raspberries</h3>
+               <p>Ksh 80</p>
+             </div>
+             
+             
+
+             <div class="d-flex">
+               <div class="btn-group">
+                 <button type="submit" class="item-btn">Add to Cart</button>
+               </div>
+             
+             </div>
+           </div>
+         </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm" id="card-item">
+            <div class="image">
+              <img src="{{url_for('static', filename='gooseberries.png')}}" alt="">
+            </div>
+           <div class="card-body">
+             <div class="name">
+               <h3>Gooseberries</h3>
+               <p>Ksh 120</p>
+             </div>
+             
+             
+
+             <div class="d-flex">
+               <div class="btn-group">
+                 <button type="submit" class="item-btn">Add to Cart</button>
+               </div>
+             
+             </div>
+           </div>
+         </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm" id="card-item">
+            <div class="image">
+              <img src="{{url_for('static', filename='badam.png')}}" alt="">
+            </div>
+           <div class="card-body">
+             <div class="name">
+               <h3>Badam</h3>
+               <p>Ksh 300</p>
+             </div>
+             
+             
+
+             <div class="d-flex">
+               <div class="btn-group">
+                 <button type="submit" class="item-btn">Add to Cart</button>
+               </div>
+             
+             </div>
+           </div>
+         </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm" id="card-item">
+            <div class="image">
+              <img src="{{url_for('static', filename='apple.png')}}" alt="">
+            </div>
+           <div class="card-body">
+             <div class="name">
+               <h3>Apples</h3>
+               <p>Ksh 65</p>
+             </div>
+             
+             
+
+             <div class="d-flex">
+               <div class="btn-group">
+                 <button type="submit" class="item-btn">Add to Cart</button>
+               </div>
+             
+             </div>
+           </div>
+         </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm" id="card-item">
+            <div class="image">
+              <img src="{{url_for('static', filename='avocado.png')}}" alt="">
+            </div>
+           <div class="card-body">
+             <div class="name">
+               <h3>Avocado</h3>
+               <p>Ksh 35</p>
+             </div>
+             
+             
+
+             <div class="d-flex">
+               <div class="btn-group">
+                 <button type="submit" class="item-btn">Add to Cart</button>
+               </div>
+             
+             </div>
+           </div>
+         </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm" id="card-item">
+            <div class="image">
+              <img src="{{url_for('static', filename='orange.png')}}" alt="">
+            </div>
+           <div class="card-body">
+             <div class="name">
+               <h3>Oranges</h3>
+               <p>Ksh 60</p>
+             </div>
+             
+             
+
+             <div class="d-flex">
+               <div class="btn-group">
+                 <button type="submit" class="item-btn">Add to Cart</button>
+               </div>
+             
+             </div>
+           </div>
+         </div>
+        </div>
+       
+      </div>
+    </div>
+  </div>
+
+</main>
+
+
+</div>
+</div>
+
+
+
+{% endblock %}
